@@ -12,12 +12,18 @@
  
   <h1>GitHub page as PWA template</h1>
   <p>
-    This is a PWA template for GitHub pages. 
-    Make sure to check the README at 
     <a href="https://github.com/mobilelifeful/github-page-pwa/">https://github.com/mobilelifeful/github-page-pwa/</a> and 
     to change the necessary settings to your needs.
   </p>
-
+ <form id="login-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <br>
+      <button type="submit">Log in</button>
+    </form>
   <script>
       if (navigator.serviceWorker) {
         navigator.serviceWorker.register (
